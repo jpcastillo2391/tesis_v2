@@ -1,0 +1,48 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	background: darkblue url("images/paperwallpaper.jpg");
+	height: 100%;
+}
+html, body{
+	height: 100%;
+}
+
+.navbar {
+	border-radius: 0;
+}
+
+.navbar-brand {
+	font-family: 'Satisfy', cursive;
+}
+
+.glyphicon-star {
+    color: #CCCCCC;
+    font-size: 16px;
+}
+
+.glyphicon-star.active {
+    color: #FDB230;
+}
+
+#myfooter {
+    color: #f7f9fd;
+	background-color: #000000;
+	position: relative;
+	height:150px;
+	margin-top: -155px;
+
+}
+
+#my-variable-content{
+	min-height: 100%;
+	overflow: auto;
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+
+
+

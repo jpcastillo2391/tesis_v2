@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}tesis{% endblock %}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}" />
+    <link href="{% static 'Base_Page_setup/images/favicon.ico' %}" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'Base_Page_setup/style.css' %}">
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-iver navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+          </div>
+      </div>
+  </nav>
+      <div id="my-variable-content">
+        {% block body %}
+        {% endblock %}
+      </div>
+</body>
+</html>
